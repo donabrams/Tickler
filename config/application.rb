@@ -1,12 +1,15 @@
 require File.expand_path('../boot', __FILE__)
 
 # Pick the frameworks you want:
-require "active_record/railtie"
-require "action_controller/railtie"
-require "action_mailer/railtie"
-require "active_resource/railtie"
-# require "sprockets/railtie"
-require "rails/test_unit/railtie"
+# require "active_record/railtie"
+# require "action_controller/railtie"
+# require "action_mailer/railtie"
+# require "active_resource/railtie"
+# require "rails/test_unit/railtie"
+require "rails/all"
+
+#Bundler.require(:default, Rails.env) if defined?(Bundler)
+require 'rails/all'
 
 if defined?(Bundler)
   # If you precompile assets before deploying to production, use this line
@@ -43,7 +46,7 @@ module Tickler
     config.encoding = "utf-8"
 
     # Configure sensitive parameters which will be filtered from the log file.
-    config.filter_parameters += [:password]
+    config.filter_parameters += [:password, :password_confirmation]
     
     config.assets.initialize_on_precompile = false
     
@@ -54,5 +57,13 @@ module Tickler
       # g.test_framework  :rspec
       # g.orm             :mongoid
     end
+    
+    # Enable the asset pipeline
+    config.assets.enabled = true
+    
+    config.assets.paths << Rails.root.join("app", "assets", "flash")
+
+    # Version of your assets, change this if you want to expire all your assets
+    config.assets.version = '1.0'
   end
 end

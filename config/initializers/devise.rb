@@ -1,3 +1,5 @@
+require "omniauth-openid"
+
 # Use this hook to configure devise mailer, warden hooks and so forth.
 # Many of these configuration options can be set straight in your model.
 Devise.setup do |config|
@@ -206,4 +208,5 @@ Devise.setup do |config|
   #   manager.intercept_401 = false
   #   manager.default_strategies(:scope => :user).unshift :some_external_strategy
   # end
+  config.omniauth :openid, :name => 'google', :identifier => 'https://www.google.com/accounts/o8/id'
 end
