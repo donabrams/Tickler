@@ -46,5 +46,13 @@ module Tickler
     config.filter_parameters += [:password]
     
     config.assets.initialize_on_precompile = false
+    
+    config.generators do |g|
+      g.template_engine :haml
+
+      # you can also specify a different test framework or ORM here
+      # g.test_framework  :rspec
+      # g.orm             :mongoid
+    end
   end
 end

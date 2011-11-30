@@ -4,6 +4,7 @@ gem 'rails', '3.1.3'
 gem 'authlogic', '3.1.0'
 gem 'haml', '3.0.25'
 gem 'devise'
+gem 'omniauth'
 
 group :development, :test do
   gem 'sqlite3'

@@ -1,4 +1,6 @@
 Tickler::Application.routes.draw do
+  devise_for :users
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -56,4 +58,5 @@ Tickler::Application.routes.draw do
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id(.:format)))'
   root :to => "home#index"
+  match "/test" => "test#show"
 end
