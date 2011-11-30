@@ -8,17 +8,17 @@ Additionally, each individual or group can choose to get a number. For individua
 
 === Milestones
 
-1. Create a simple login via google apps that creates an account
-1. CRUD contacts
-1. CRUD notes for contacts
-1. CRUD links between contacts
-1. CRUD followups for contacts
-1. Create an agenda/calendar view of followups
-1. CRUD reminders for followups
-1. CRUD schedules for followups (337?)
-1. Create a static phone number for each user on demand
-1. Call/SMS/Email a contact from the web
-1. Create a static phone number for a user group or user's organization 
-1. Set up group number management
+ 1. Create a simple login via google apps that creates an account
+ 1. CRUD contacts
+ 1. CRUD notes for contacts
+ 1. CRUD links between contacts
+ 1. CRUD followups for contacts
+ 1. Create an agenda/calendar view of followups
+ 1. CRUD reminders for followups
+ 1. CRUD schedules for followups (337?)
+ 1. Create a static phone number for each user on demand
+ 1. Call/SMS/Email a contact from the web
+ 1. Create a static phone number for a user group or user's organization 
+ 1. Set up group number management
 
 Currently on Milestone 0.
