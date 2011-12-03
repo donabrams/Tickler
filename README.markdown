@@ -21,4 +21,4 @@ Additionally, each individual or group can choose to get a number. For individua
  1. Create a static phone number for a user group or user's organization 
  1. Set up group number management
 
-Currently on Milestone 0.
+Current status: Completed Milestone 1.
